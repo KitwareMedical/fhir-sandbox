@@ -98,3 +98,11 @@ new observation types by simply adding an entry to [observation_types.json](obse
 ## Limitations
 
 This tool only works with only two out of the [many types of FHIR resources](https://www.hl7.org/fhir/resourcelist.html): Patients and Observations. Extending this tool to work with other types of FHIR resources requires a more involved development effort, as well as getting friendly with the FHIR documentation.
+
+## References
+
+Johnson, A., Pollard, T., & Mark, R. (2016). MIMIC-III Clinical Database (version 1.4). PhysioNet. https://doi.org/10.13026/C2XW26.
+
+## Acknowledgements
+
+This work was supported by the National Institutes of Health under Award Number R42HL145669. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.

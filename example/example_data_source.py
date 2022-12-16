@@ -6,7 +6,7 @@ class ExamplePatient(Patient):
   def __init__(self, patient_info):
     self.patient_info = patient_info
 
-  def get_indentifier_value(self):
+  def get_identifier_value(self):
     return str(self.patient_info['patient_id'])
 
   def get_name(self):
@@ -39,6 +39,6 @@ class ExampleDataSource(PatientDataSource):
     return (ExamplePatient(row) for _, row in unique_patients.iterrows())
 
   def get_patient_observations(self, patient):
-    patient_id = int(patient.get_indentifier_value())
+    patient_id = int(patient.get_identifier_value())
     observations_for_patient = self.data[self.data['patient_id']==patient_id]
     return (ExampleObservation(row) for _, row in observations_for_patient.iterrows())

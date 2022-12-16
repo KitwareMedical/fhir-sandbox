@@ -84,7 +84,7 @@ For `get_identifier_value`, we need to return a string to identify the patient f
 We will use the `patient_id` row since the values are unique.
 
 ```python
-    def get_indentifier_value(self) -> str:
+    def get_identifier_value(self) -> str:
         return str(self.patient_info['patient_id'])
 ```
 
@@ -105,7 +105,7 @@ class ExampleDataSource(PatientDataSource):
 
     ...
     def get_patient_observations(self, patient):
-        patient_id = int(patient.get_indentifier_value())
+        patient_id = int(patient.get_identifier_value())
         observations_for_patient = self.data[self.data['patient_id']==patient_id]
         return (ExampleObservation(row) for _, row in observations_for_patient.iterrows())
 ```

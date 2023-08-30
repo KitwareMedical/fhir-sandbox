@@ -15,7 +15,7 @@ The full list of supported observation types can be found in [observation_types.
     ```sh
     git clone git@github.com:KitwareMedical/fhir-sandbox.git
     ```
-3. Install the required pacakages:
+3. Install the required pacakages (python verion >= 3.9 required):
     ```sh
     pip install -r requirements.txt
     ```

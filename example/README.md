@@ -163,14 +163,14 @@ a new JSON config file that contains the appropriate paths and arguments:
             "csv_file": "./example/example.csv"
         },
         "class_name": "ExampleDataSource",
-        "module_path": "./example/example_data_source.py"
+        "module_path": "./example_data_source.py"
     }
 
 ```
 
-- `args` are the arguements passed into the `PatientDataSource.__init__` implementation.
+- `args` are the arguements passed into the `PatientDataSource.__init__` implementation. In this example the arguments happen to be filesystem paths, and they are given relative to the expected working directory when the `populate_fhir_server_script` is executed, just because of the way `ExampleDataSource.__init__` happens to be written.
 - `class_name` is the name of the `PatientDataSource` subclass.
-- `module_path` is the path to the `PatientDataSource` implementation.
+- `module_path` is the path to the `PatientDataSource` implementation. The path here should always be _relative to the directory containing the json file_.
 
 After following these steps, we should be able to run `populate_fhir_server.py` with the JSON config file as an argument.
 

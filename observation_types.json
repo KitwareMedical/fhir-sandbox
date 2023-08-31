@@ -2,7 +2,7 @@
 	"FIO2": 
 	{
 		"display_string": "FIO2",
-		"unit_code": "",
+		"unit_code": "%",
 		"loinc_code": "19996-8"
 	},
 	"PIP": 

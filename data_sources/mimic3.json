@@ -5,5 +5,5 @@
 		"mimic3_schemas_dir": "./mimic3-schemas/"
 	},
 	"class_name": "Mimic3",
-	"module_path": "./data_sources/mimic3.py"
+	"module_path": "./mimic3.py"
 }

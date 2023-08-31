@@ -5,6 +5,7 @@ import importlib.util
 import os
 from fhirclient import client
 from transaction_bundles import create_transaction_bundle_object, post_transaction_bundle
+from pathlib import Path
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--json_file', type=str, help='JSON file for data generation to use', required=True)
@@ -12,11 +13,13 @@ parser.add_argument('--fhir_server', type=str, help='FHIR server', required=True
 
 args = parser.parse_args()
 
-with open(args.json_file) as json_file: # Import data source and create instance of data source
+json_path = Path(args.json_file)
+
+with open(json_path) as json_file: # Import data source and create instance of data source
   data_source_dict = json.load(json_file)
-  _, tail = os.path.split(data_source_dict['module_path'])
-  module_name = tail.split('.')[0]
-  spec = importlib.util.spec_from_file_location(module_name, data_source_dict['module_path'])
+  module_path = Path(data_source_dict['module_path'])
+  module_name = module_path.stem
+  spec = importlib.util.spec_from_file_location(module_name, (json_path.parent)/module_path)
   module = importlib.util.module_from_spec(spec)
   sys.modules[module_name] = module
   spec.loader.exec_module(module)

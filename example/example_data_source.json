@@ -4,5 +4,5 @@
 		"csv_file": "./example/example.csv"
 	},
 	"class_name": "ExampleDataSource",
-	"module_path": "./example/example_data_source.py"
+	"module_path": "./example_data_source.py"
 }

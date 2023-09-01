@@ -25,7 +25,7 @@
     },
     "SAO2":
     {
-        "display_string": "Sa02",
+        "display_string": "SaO2",
         "unit_code": "%",
         "loinc_code": "59408-5"
     },

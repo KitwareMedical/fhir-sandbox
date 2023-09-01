@@ -1,38 +1,44 @@
 {
-	"FIO2": 
-	{
-		"display_string": "FIO2",
-		"unit_code": "%",
-		"loinc_code": "19996-8"
-	},
-	"PIP": 
-	{
-		"display_string": "PIP",
-		"unit_code": "cm[H20]",
-		"loinc_code": "60951-1"
-	},
-	"PEEP": 
-	{
-		"display_string": "PEEP",
-		"unit_code": "cm[H20]",
-		"loinc_code": "20077-4"
-	},
-	"HR": 
-	{
-		"display_string": "Heart Rate",
-		"unit_code": "/min",
-		"loinc_code": "8867-4"
-	},
-	"SAO2": 
-	{
-		"display_string": "Sa02",
-		"unit_code": "%",
-		"loinc_code": "59408-5"
-	},
-	"bodyweight":
-	{
-	    "display_string": "body weight",
-	    "unit_code": "kg",
-	    "loinc_code": "29463-7"
-	}
+    "FIO2":
+    {
+        "display_string": "FIO2",
+        "unit_code": "%",
+        "loinc_code": "19996-8"
+    },
+    "PIP":
+    {
+        "display_string": "PIP",
+        "unit_code": "cm[H20]",
+        "loinc_code": "60951-1"
+    },
+    "PEEP":
+    {
+        "display_string": "PEEP",
+        "unit_code": "cm[H20]",
+        "loinc_code": "20077-4"
+    },
+    "HR":
+    {
+        "display_string": "Heart Rate",
+        "unit_code": "/min",
+        "loinc_code": "8867-4"
+    },
+    "SAO2":
+    {
+        "display_string": "Sa02",
+        "unit_code": "%",
+        "loinc_code": "59408-5"
+    },
+    "bodyweight":
+    {
+        "display_string": "body weight",
+        "unit_code": "kg",
+        "loinc_code": "29463-7"
+    },
+    "RR":
+    {
+        "display_string": "Respiratory Rate",
+        "unit_code": "/min",
+        "loinc_code": "9279-1"
+    }
 }
